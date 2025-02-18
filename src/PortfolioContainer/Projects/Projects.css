@@ -1,0 +1,105 @@
+.projects-section {
+  padding: 80px 0 80px;
+  background-image: url("../../../src/assets/Projects/bg-1.jpg");
+  background-position: center;
+  background-attachment: fix;
+  position: relative; /* determine if its clickable and slidable */
+  z-index: -1;
+}
+
+.projects-section:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  background-color: #1f2235;
+}
+.footer-image {
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: -110px;
+}
+
+.footer-image img {
+  max-width: 100%;
+  height: 130px;
+}
+
+.projects-section .proj-item {
+  background-color: white;
+  padding: 30px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.projects-section .proj-item p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0 0 10px;
+  font-style: italic;
+}
+
+.projects-section .proj-item p .fa-quote-left {
+  margin-right: 5px;
+  color: tomato;
+}
+
+.projects-section .proj-item p .fa-quote-right {
+  margin-left: 5px;
+  color: tomato;
+}
+
+.projects-section .proj-comments .stars {
+  margin: 0 0 20px;
+}
+
+.projects-section .proj-comments .stars li {
+  display: inline-block;
+  margin: 0 1px;
+}
+.projects-section .proj-comments .stars li i {
+  font-size: 13px;
+  color: tomato;
+}
+
+/* Remove this in the future i dont like */
+.projects-section .project-info {
+  position: relative;
+  padding-left: 80px;
+  padding-top: 5px;
+  min-height: 60px;
+}
+
+/* Remove this in the future i dont like */
+.projects-section .project-info img {
+  height: 70px;
+  width: 70px;
+  border: 2px solid transparent;
+  border-color: black;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  display: absolute;
+}
+
+.projects-section .project-info h5 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0 0 2px;
+}
+
+.projects-section .project-info p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+}
